@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlannerApp.MainPage"
+             Title="Daily Planner">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="15">
+
+            <!-- 🧠 Başlık -->
+            <Label Text="Daily Planner"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="{StaticResource PrimaryDark}" />
+
+            <!-- ✏️ Görev Ekleme Alanı -->
+            <HorizontalStackLayout Spacing="10">
+                <Entry x:Name="TaskEntry"
+                       Placeholder="Enter your task..."
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="{StaticResource Gray100}" />
+                <Button Text="Add" Clicked="OnAddTaskClicked" />
+            </HorizontalStackLayout>
+
+            <!-- 🔘 Görev Listesi -->
+            <CollectionView x:Name="TaskList" Margin="0,10,0,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="5" Padding="10" BackgroundColor="{StaticResource BackgroundLight}" BorderColor="{StaticResource Gray300}">
+                            <HorizontalStackLayout Spacing="10">
+                                <CheckBox IsChecked="{Binding IsDone}" />
+                                <Label Text="{Binding DisplayText}" 
+                                       TextDecorations="{Binding TextDecoration}" 
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="StartAndExpand"
+                                       TextColor="{StaticResource Gray900}" />
+                                <Button Text="❌" Clicked="OnDeleteClicked" CommandParameter="{Binding}" />
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- 🧹 Temizleme Butonu (Command) -->
+            <Button Text="Clear All"
+                    Command="{Binding ClearCommand}"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    BackgroundColor="{StaticResource Primary}"
+                    TextColor="White" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

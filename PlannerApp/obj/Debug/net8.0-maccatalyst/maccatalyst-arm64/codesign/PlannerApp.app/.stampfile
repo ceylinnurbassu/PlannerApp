@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/ceylinnurbassu/PlannerApp/PlannerApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/ceylinnurbassu/PlannerApp/PlannerApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/PlannerApp.app
