@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-
+using System.Globalization;
 namespace PlannerApp;
 
 public partial class MainPage : ContentPage
@@ -12,7 +12,8 @@ public partial class MainPage : ContentPage
         TaskList.ItemsSource = Tasks;
 
         // Tarihi ata
-        DateLabel.Text = DateTime.Now.ToString("dddd, MMM dd yyyy");
+        DateLabel.Text = DateTime.Now.ToString("dddd, MMM dd yyyy", new CultureInfo("en-US"));
+
     }
 
     private void OnAddTaskClicked(object sender, EventArgs e)

@@ -4,7 +4,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <Color x:Key="Primary">#E5D0FA</Color>
-    <Color x:Key="PrimaryDark">#774C9E</Color>
+    <Color x:Key="PrimaryDark">#FF87030C</Color>
     <Color x:Key="PrimaryLight">#F2E8FD</Color>
     <Color x:Key="PrimaryText">#222222</Color>
     <Color x:Key="BackgroundLight">#FAF9FC</Color>
@@ -15,6 +15,6 @@
     <Color x:Key="Gray900">#1F2937</Color>
 
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}" />
-    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource PrimaryDark}" />
+    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="#FF87030C" />
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundLight}" />
 </ResourceDictionary>
