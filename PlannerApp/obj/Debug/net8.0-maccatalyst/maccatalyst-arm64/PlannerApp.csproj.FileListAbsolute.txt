@@ -299,3 +299,4 @@
 /Users/ceylinnurbassu/PlannerApp/PlannerApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/PlannerApp.csproj.Up2Date
 /Users/ceylinnurbassu/PlannerApp/PlannerApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/PlannerApp.genruntimeconfig.cache
 /Users/ceylinnurbassu/PlannerApp/PlannerApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/ref/PlannerApp.dll
+/Users/ceylinnurbassu/PlannerApp/PlannerApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/PlannerApp.sourcelink.json

@@ -1,35 +1,33 @@
 ﻿using System.Collections.ObjectModel;
-using System.Windows.Input;
 
 namespace PlannerApp;
 
 public partial class MainPage : ContentPage
 {
     public ObservableCollection<TaskItem> Tasks { get; set; } = new();
-    public ICommand ClearCommand { get; }
 
     public MainPage()
     {
         InitializeComponent();
-        ClearCommand = new Command(OnClearTasks);
         TaskList.ItemsSource = Tasks;
-        BindingContext = this; // ICommand binding için
+
+        // Tarihi ata
+        DateLabel.Text = DateTime.Now.ToString("dddd, MMM dd yyyy");
     }
 
     private void OnAddTaskClicked(object sender, EventArgs e)
     {
         string text = TaskEntry.Text?.Trim();
-
         if (string.IsNullOrEmpty(text))
         {
-            DisplayAlert("Empty Task", "Please enter a task.", "OK");
+            DisplayAlert("Empty Task", "Please enter a task before adding.", "OK");
             return;
         }
 
         var task = new TaskItem
         {
             Description = text,
-            CreatedAt = DateTime.Now
+            Timestamp = DateTime.Now.ToString("HH:mm")
         };
 
         Tasks.Add(task);
@@ -38,23 +36,28 @@ public partial class MainPage : ContentPage
 
     private void OnDeleteClicked(object sender, EventArgs e)
     {
-        if (sender is Button btn && btn.CommandParameter is TaskItem task)
+        if (sender is Button button && button.CommandParameter is TaskItem task)
+        {
             Tasks.Remove(task);
+        }
     }
 
-    private void OnClearTasks()
+    private void OnClearAllClicked(object sender, EventArgs e)
     {
-        if (Tasks.Count > 0)
+        bool confirm = DisplayAlert("Clear All", "Are you sure you want to delete all tasks?", "Yes", "No").Result;
+        if (confirm)
+        {
             Tasks.Clear();
+        }
     }
 }
 
 public class TaskItem
 {
     public string Description { get; set; } = string.Empty;
-    public bool IsDone { get; set; }
-    public DateTime CreatedAt { get; set; }
+    public string Timestamp { get; set; } = string.Empty;
+    public bool IsDone { get; set; } = false;
 
-    public string DisplayText => $"{Description} ({CreatedAt:HH:mm})";
+    public string DisplayText => $"{Description} ({Timestamp})";
     public TextDecorations TextDecoration => IsDone ? TextDecorations.Strikethrough : TextDecorations.None;
 }

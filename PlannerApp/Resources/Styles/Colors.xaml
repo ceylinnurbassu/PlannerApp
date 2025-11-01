@@ -1,25 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xaml-comp compile="true"?>
-<ResourceDictionary 
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <!-- 🎨 Temel renk paleti -->
-    <Color x:Key="Primary">#4C6EF5</Color>
-    <Color x:Key="PrimaryDark">#364FC7</Color>
-    <Color x:Key="PrimaryLight">#A5B8FF</Color>
-    <Color x:Key="PrimaryText">#1E1E2E</Color>
-    <Color x:Key="BackgroundLight">#F9FAFB</Color>
+    <Color x:Key="Primary">#E5D0FA</Color>
+    <Color x:Key="PrimaryDark">#774C9E</Color>
+    <Color x:Key="PrimaryLight">#F2E8FD</Color>
+    <Color x:Key="PrimaryText">#222222</Color>
+    <Color x:Key="BackgroundLight">#FAF9FC</Color>
 
-    <!-- ⚙️ Gri tonları -->
-    <Color x:Key="Gray100">#E5E7EB</Color>
-    <Color x:Key="Gray300">#D1D5DB</Color>
+    <Color x:Key="Gray100">#F3F4F6</Color>
+    <Color x:Key="Gray300">#E5E7EB</Color>
     <Color x:Key="Gray500">#6B7280</Color>
-    <Color x:Key="Gray900">#111827</Color>
+    <Color x:Key="Gray900">#1F2937</Color>
 
-    <!-- 🌈 Fırçalar -->
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}" />
-    <SolidColorBrush x:Key="GrayBrush" Color="{StaticResource Gray500}" />
+    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource PrimaryDark}" />
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundLight}" />
-
 </ResourceDictionary>
