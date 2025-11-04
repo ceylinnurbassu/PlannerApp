@@ -3,14 +3,14 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <!-- 🎨 Primary Theme Colors -->
+    <!--primary theme colors -->
     <Color x:Key="Primary">#E5D0FA</Color>
     <Color x:Key="PrimaryDark">#87030C</Color>
     <Color x:Key="PrimaryLight">#FFEDE5E5</Color>
     <Color x:Key="PrimaryText">#222222</Color>
     <Color x:Key="BackgroundLight">#FAF9FC</Color>
 
-    <!-- ⚪ Grayscale Palette -->
+    <!--grayscale palette -->
     <Color x:Key="Gray50">#FCFCFC</Color>
     <Color x:Key="Gray100">#F3F4F6</Color>
     <Color x:Key="Gray200">#E8E9EC</Color>
@@ -18,7 +18,7 @@
     <Color x:Key="Gray500">#6B7280</Color>
     <Color x:Key="Gray900">#1F2937</Color>
 
-    <!-- Brushes -->
+    <!--brushes -->
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}" />
     <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource PrimaryDark}" />
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundLight}" />

@@ -12,15 +12,16 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        TaskList.ItemsSource = Tasks;
+        TaskList.ItemsSource = Tasks;  // Binding data to CollectionView
 
-        // Auto-formatting — show English date format
+        // Auto-formatting show English date format
         DateLabel.Text = DateTime.Now.ToString("dddd, MMM dd yyyy", new CultureInfo("en-US"));
     }
 
-    // ✅ Add new task
-    private async void OnAddTaskClicked(object sender, EventArgs e)
+
+    private async void OnAddTaskClicked(object sender, EventArgs e) // Data Manipulation: Add new task
     {
+        //  Postel’s Law — System accepts flexible input but validates before use
         string text = TaskEntry.Text?.Trim();
         if (string.IsNullOrEmpty(text))
         {
@@ -31,7 +32,7 @@ public partial class MainPage : ContentPage
         var task = new TaskItem
         {
             Description = text,
-            Timestamp = DateTime.Now.ToString("HH:mm", new CultureInfo("en-US")),
+            Timestamp = DateTime.Now.ToString("HH:mm", new CultureInfo("en-US")), // timestamping applied when task created
             IsDone = false
         };
 
@@ -41,7 +42,8 @@ public partial class MainPage : ContentPage
         TaskEntry.Text = string.Empty;
     }
 
-    // ✅ Delete single task with confirmation popup
+    // delete single task with confirmation popup
+    //UX Law Doherty Threshold – Immediate feedback
     private async void OnDeleteClicked(object sender, EventArgs e)
     {
         if (sender is Button button && button.CommandParameter is TaskItem task)
@@ -58,7 +60,9 @@ public partial class MainPage : ContentPage
         }
     }
 
-    // ✅ Clear all tasks with confirmation popup
+    // Clear all tasks with confirmation popup
+
+    //ICommand-like Binding example — triggered by “Clear All” button
     private async void OnClearAllClicked(object sender, EventArgs e)
     {
         if (Tasks.Count == 0)
