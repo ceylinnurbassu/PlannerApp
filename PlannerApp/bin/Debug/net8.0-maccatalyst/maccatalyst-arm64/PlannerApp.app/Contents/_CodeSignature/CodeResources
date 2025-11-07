@@ -12,10 +12,6 @@
 		<data>
 		Nh+iDZ8aq+ANzenhndhFZ4Pfx6I=
 		</data>
-		<key>Resources/MauiInfo.plist</key>
-		<data>
-		iEtuUGCV6JM3gxS/pO33swhmpp8=
-		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		oowkf1sL6T19nanXUObgmuayWqM=
@@ -205,14 +201,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ei4wm3ujDU5A/cYGDSWqtJQzsg3YbHSoO3WI9VXa0DM=
+			1+w4j/oyTk70fmpGOYXDY0tPjV/q21HUWvkDTlXc2YU=
 			</data>
 		</dict>
 		<key>MonoBundle/PlannerApp.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aMc4lFOywYr7ggj3INn+qO5+JwK273h3qQ4HQoK7vE0=
+			RnYFJBVb1ShYMo5SSFgsMI2oSYd9pZOxq3/h8jiSsyA=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1353,7 +1349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ehNXhHuB1FK2o71B8enyO5FoGF64Q2/WMLYXMsvXzEY=
+			6/59nZLZJlJXjVVinwZD52JPFDrP/jBMOlNipcHhlLo=
 			</data>
 		</dict>
 		<key>MonoBundle/ar/Microsoft.Maui.Controls.resources.dll</key>
@@ -1634,13 +1630,6 @@
 			<key>hash2</key>
 			<data>
 			wSdVJrmdDG+Op7VuBOuhLRSDHrZ3Bg4gGYhYxck0BQA=
-			</data>
-		</dict>
-		<key>Resources/MauiInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>

@@ -8,7 +8,7 @@
     <Color x:Key="PrimaryDark">#87030C</Color>
     <Color x:Key="PrimaryLight">#FFEDE5E5</Color>
     <Color x:Key="PrimaryText">#222222</Color>
-    <Color x:Key="BackgroundLight">#FAF9FC</Color>
+    <Color x:Key="BackgroundLight">#e9d3d3</Color>
 
     <!--grayscale palette -->
     <Color x:Key="Gray50">#FCFCFC</Color>

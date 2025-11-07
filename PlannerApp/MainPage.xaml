@@ -9,15 +9,37 @@
         <VerticalStackLayout Padding="25" Spacing="20">
 
             <!-- header -->
-            <VerticalStackLayout Spacing="3">
-                <Label Text="Today"
-                       FontSize="34"
-                       FontAttributes="Bold"
-                       TextColor="{StaticResource PrimaryDark}" />
-                <Label x:Name="DateLabel"
-                       FontSize="24"
-                       TextColor="{StaticResource Gray500}" />
-            </VerticalStackLayout>
+           
+            <Border Stroke="{StaticResource PrimaryDark}"  
+                    StrokeThickness="1.5"
+                    BackgroundColor="{StaticResource PrimaryLight}"  
+                    Padding="20"
+                    HeightRequest="120"
+                    StrokeShape="RoundRectangle 0"
+                    
+                    VerticalOptions="Start">
+
+                <Border.Shadow>
+                    <Shadow Brush="{StaticResource Primary}" Offset="0,4" Radius="8" Opacity="0.25"/>
+
+                </Border.Shadow>
+
+
+                <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                
+                    <Label Text="Let's Plan Your Day!"
+                        FontSize="34"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource PrimaryDark}"
+                        HorizontalTextAlignment="Center"/>
+            
+                    <Label x:Name="DateLabel"
+                        FontSize="24"
+                        TextColor="{StaticResource Gray500}"
+                        HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
 
             <!-- task entry -->
            
