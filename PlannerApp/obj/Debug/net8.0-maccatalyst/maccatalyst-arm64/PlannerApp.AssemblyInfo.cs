@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlannerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8229b7f3a0d306a7a97763e6eca4dbcb8666f8b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+53e7aea93e9433f7e45d9f5554e5a9ddc43324a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlannerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlannerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
