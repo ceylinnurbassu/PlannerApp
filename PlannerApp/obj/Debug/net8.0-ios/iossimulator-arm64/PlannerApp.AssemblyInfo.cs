@@ -17,8 +17,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("PlannerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlannerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("MacCatalyst18.0")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("MacCatalyst13.1")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS18.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS11.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
 
